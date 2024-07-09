@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin home Movie</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+  <div>
+	<h1>Movies Details</h1><br>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>Name</td>
+				<td>Movie Link</td>
+				<td>Genre</td>
+				<td>Cast</td>
+				<td>Director</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="movie: ${movie}">
+				<td th:text="${movie.movieName}"></td>
+				<td th:utext="${movie.movieLink}"></td>
+				<td th:text="${movie.genre}"></td>
+				<td th:text="${movie.cast}"></td>
+				<td th:text="${movie.director}"></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<a href="add_movie">Add More Movies</a><br>
+	<a href="view_users">View Users</a><br>
+	<a href="/">Logout</a>
+  </div>
+  </body>
+  </html>

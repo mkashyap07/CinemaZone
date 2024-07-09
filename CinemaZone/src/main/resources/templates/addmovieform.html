@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>movie form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+	</head>
+	<body>
+		<form action="addmovie" method="post">
+			<label>Movie Name: </label>
+			<input name="movieName" type="text"><br><br>
+			<label>Movie Link: </label>
+			<input name="movieLink" type="text"><br><br>
+			<label>Genre: </label><br>
+			<!--<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Genre
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			    Action<input class="dropdown-item" name="genre" type="checkbox" value="Action">
+			    Horror<input class="dropdown-item" name="genre" type="checkbox" value="Horror">
+			    Thriller<input class="dropdown-item" name="genre" type="checkbox" value="Thriller">
+				Romantic Comedy<input name="genre" type="checkbox" value="Romantic Comedy">
+				Romance<input class="dropdown-item" name="genre" type="checkbox" value="Romance">
+				Comedy<input class="dropdown-item" name="genre" type="checkbox" value="Comedy">
+				Adventure<input class="dropdown-item" name="genre" type="checkbox" value="Adventure">
+			</div>
+			</div>-->
+			Action<input name="genre" type="checkbox" value="Action"><br>
+			Horror<input name="genre" type="checkbox" value="Horror"><br>
+			Thriller<input name="genre" type="checkbox" value="Thriller"><br>
+			Romantic Comedy<input name="genre" type="checkbox" value="Romantic Comedy"><br>
+			Romance<input name="genre" type="checkbox" value="Romance"><br>
+			Comedy<input name="genre" type="checkbox" value="Comedy"><br>
+			Adventure<input name="genre" type="checkbox" value="Adventure"><br><br>
+			<label>Cast: </label>
+			<input name="cast" type="text">
+			<br><br>
+			<label>Director: </label>
+			<input name="director" type="text"><br><br>
+			<input type="submit" value="Add Movie"><br><br>
+		</form>
+	</body>
+</html>

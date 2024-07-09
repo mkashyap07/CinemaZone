@@ -1,0 +1,14 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-image: lrgb(rgb(250,250,170),rgb(250, 250, 170));
+	height: auto;
+	width: 100%;
+	justify-content: center;
+	margin-top:100px;
+	padding-top: 100px;
+	display: flex;
+}
